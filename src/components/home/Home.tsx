@@ -37,9 +37,11 @@ const Home = () => {
                             sequence={[
                                 'Hi, my name is Kush, and I am a broke',
                                 30,
-                                'Hi, my name is Kush, and I am a College Student',
+                                'Hi, my name is Kush, and I am a College Graduate',
                                 1000,
                                 'Hi, my name is Kush, and I am also a Web Developer',
+                                1000,
+                                'Hi, my name is Kush, and I am also a Software Engineer',
                                 1000,
                             ]}
                             speed={15}
@@ -57,6 +59,8 @@ const Home = () => {
                         <br></br>
                         <p>View my&nbsp;
                             <Link className="relative before:absolute before:bg-gray-400 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.25] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500" to="/Projects"><span className="relative">Projects</span></Link>
+                            ,&nbsp;
+                            <Link className="relative before:absolute before:bg-gray-400 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.25] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500" to="/Photography"><span className="relative">Photography</span></Link>
                             ,&nbsp;
                             <Link className="relative before:absolute before:bg-gray-400 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.25] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500" to="/ContactMe"><span className="relative">Contact Me</span></Link>
                             ,&nbsp;or send me an email at

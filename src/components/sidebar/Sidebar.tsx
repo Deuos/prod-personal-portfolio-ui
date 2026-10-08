@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -10,9 +10,10 @@ const NavBar = () => {
         {[
           ['About Me', '/AboutMe'],
           ['Projects', '/Projects'],
+          ['Photography', '/Photography'],
           ['Contact Me', '/ContactMe'],
         ].map(([title, url]) => (
-          <Link to={url} className="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-200">
+          <Link key={url} to={url} className="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition after:ease-in-out after:duration-200">
             {title}</Link>
         ))}
       </div>
@@ -57,6 +58,11 @@ const NavBar = () => {
                 <li className="border-b border-gray-400 my-8 uppercase font-semibold">
                   <Link to="/Projects">
                     Projects
+                  </Link>
+                </li>
+                <li className="border-b border-gray-400 my-8 uppercase font-semibold">
+                  <Link to="/Photography">
+                    Photography
                   </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase font-semibold">
