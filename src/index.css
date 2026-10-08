@@ -33,10 +33,8 @@
   /* Named sizes, used by w-* and h-* */
   --spacing-title: 56.25rem;
   --spacing-titleTablet: 37.5rem;
-  --spacing-titleMobile: 21.875rem;
   --spacing-navbarWidth: 75rem;
   --spacing-navbarWidthTablet: 43.75rem;
-  --spacing-navbarWidthMobile: 25.875rem;
   --spacing-contactButton: 40.625rem;
   --spacing-contactButtonWidth: 10.938rem;
   --spacing-projectCardWidth: 24rem;

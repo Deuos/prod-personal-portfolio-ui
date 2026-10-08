@@ -61,16 +61,16 @@ const Photography = () => {
 
     return (
         <div className="flex flex-col my-3 min-h-screensize">
-            <div className="mx-2 space-y-4">
-                <p className="text-white/20 font-light text-xs align-top ml-5">&nbsp;</p>
-                <p className="text-white/20 font-light text-xs align-top ml-14">&nbsp;</p>
+            <div className="mx-2 space-y-4 max-mobile:mx-4">
+                <p className="max-mobile:hidden text-white/20 font-light text-xs align-top ml-5">&nbsp;</p>
+                <p className="max-mobile:hidden text-white/20 font-light text-xs align-top ml-14">&nbsp;</p>
 
                 {/* Navbar */}
-                <p className='text-white/20 font-light text-xs align-top ml-28'>&nbsp;</p>
+                <p className='max-mobile:hidden text-white/20 font-light text-xs align-top ml-28'>&nbsp;</p>
                 <div className='flex justify-center'>
-                    <div className="flex w-navbarWidth items-center justify-between max-lg:w-navbarWidthTablet max-mobile:w-navbarWidthMobile">
+                    <div className="flex max-w-full w-navbarWidth items-center justify-between max-lg:w-navbarWidthTablet max-mobile:w-full">
                         <Link to="/">
-                            <p className="text-4.5xl font-black animate-text">
+                            <p className="text-4.5xl max-mobile:text-3xl font-black animate-text">
                                 <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent ">Photography</span>
                             </p>
                         </Link>
@@ -79,7 +79,7 @@ const Photography = () => {
                 </div>
 
                 <div className='flex flex-col items-center text-white'>
-                    <section className='relative z-10 w-title max-lg:w-titleTablet max-mobile:w-titleMobile'>
+                    <section className='relative z-10 max-w-full w-title max-lg:w-titleTablet max-mobile:w-full'>
                         {loading && <p className='mt-10 text-white/60'>Loading photos...</p>}
                         {!loading && error && <p className='mt-10 text-white/60'>{error}</p>}
                         {!loading && !error && photos.length === 0 && <p className='mt-10 text-white/60'>No photos yet. Check back soon.</p>}
@@ -109,7 +109,7 @@ const Photography = () => {
                     </section>
                 </div>
             </div>
-            <div className="fixed pointer-events-none z-0 select-none leading-tight bottom-0 left-0 font-black opacity-7 text-10xl h-backgroundTitle text-white">
+            <div className="fixed pointer-events-none z-0 select-none leading-tight bottom-0 left-0 font-black opacity-7 text-10xl h-backgroundTitle max-mobile:text-7xl max-mobile:h-auto text-white">
                 Photography
             </div>
             {selected !== null && (
