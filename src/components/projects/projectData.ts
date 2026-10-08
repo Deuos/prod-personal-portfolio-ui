@@ -27,14 +27,14 @@ export const featuredProjects: Project[] = [
     },
     {
         number: '001',
-        title: 'Taco Cents',
+        title: 'TacoCents',
         description: 'A Taco Bell optimizer that helps you get the most out of your order.',
         tags: ['Taco Bell', 'Optimizer'],
         links: [{ label: 'Website', href: 'https://tacocents.com/' }],
     },
     {
         number: '002',
-        title: 'Pricify Labs',
+        title: 'PricifyLabs',
         description: 'Geopricing for WooCommerce. Show customers prices tailored to their location.',
         tags: ['WooCommerce', 'Geopricing'],
         links: [{ label: 'Website', href: 'https://pricifylabs.com/' }],
