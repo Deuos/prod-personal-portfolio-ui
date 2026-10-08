@@ -22,7 +22,7 @@ function CardsFeatures({ number, title, description, lang1, lang2, lang3, link, 
             <div className='flex relative items-center justify-center w-projectCardWidth h-projectCardHeight bg-transparent rounded-projectCardRadius z-10'>
                 <div className='relative w-projectCardWidthInside h-projectCardHeightInside bg-Dark rounded-projectCardRadius'>
                     <div className='text-white inline-flex ml-5 mt-4 font-bold text-2xl'>{title}</div>
-                    <div className='text-white ml-5 mr-8 mt-6 inline-flex font-semibold text-[18px] text-opacity-60'>{description}</div>
+                    <div className='text-white/60 ml-5 mr-8 mt-6 inline-flex font-semibold text-[18px]'>{description}</div>
                     <div className="flex flex-col space-y-4 items-left ml-5 mt-6">
                         {link && (
                             <button className='w-[150px] h-10 flex rounded-r-[20px] rounded-l-[5px] font-bold text-black text-base hover:bg-gray-400 border-ButtonWhite border-2 bg-ButtonWhite'>

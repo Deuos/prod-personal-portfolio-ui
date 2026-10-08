@@ -19,7 +19,7 @@ function Cards({ number, title, description, lang1, lang2, lang3, link, button }
                 <div className='relative w-projectCardWidthInside  h-projectCardHeightInside bg-Dark rounded-projectCardRadius'>
 
                     <div className='text-white inline-flex ml-5 mt-4 font-bold text-2xl'>{title}</div>
-                    <div className='text-white ml-5 mr-8 mt-6 inline-flex font-medium text-md text-opacity-60'>{description}</div>
+                    <div className='text-white/60 ml-5 mr-8 mt-6 inline-flex font-medium text-md'>{description}</div>
 
                     <button className='absolute bottom-16 left-5 w-44 h-10 flex rounded-projectCardRadiusInside font-bold text-black text-base hover:bg-gray-400 border-ButtonWhite border-2 bg-ButtonWhite'>
                         <Link to={link} target='_blank' className="flex items-center justify-center rounded-projectCardRadiusInside h-full w-full border">{button} </Link>

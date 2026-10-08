@@ -1,57 +1,33 @@
-﻿{
-    "homepage": "https://kushapatel.dev/",
-    "name": "my-mantine-app",
-    "version": "0.1.0",
-    "private": false,
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^7.3.1",
-        "@fortawesome/free-solid-svg-icons": "^7.3.1",
-        "@fortawesome/react-fontawesome": "^3.5.0",
-        "react": "^19.3.0",
-        "react-dom": "^19.3.0",
-        "react-ga4": "^3.0.1",
-        "react-icons": "^5.7.0",
-        "react-router-dom": "^7.18.4",
-        "react-scripts": "5.0.1",
-        "react-type-animation": "^3.2.0"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            "\u003e0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@testing-library/jest-dom": "^7.0.1",
-        "@testing-library/react": "^16.3.3",
-        "@testing-library/user-event": "^14.6.7",
-        "@types/node": "^26.6.3",
-        "@types/react": "^19.3.0",
-        "@types/react-dom": "^19.3.0",
-        "autoprefixer": "^10.6.1",
-        "gh-pages": "^6.3.0",
-        "postcss": "^8.5.28",
-        "tailwindcss": "^4.3.3",
-        "typescript": "^7.0.2"
-    }
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-ga4": "^3.0.1",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.4",
+    "react-type-animation": "^3.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "latest",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "latest"
+  }
 }

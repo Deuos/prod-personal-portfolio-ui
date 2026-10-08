@@ -10,11 +10,11 @@ const Home = () => {
     return (
         <div className="flex flex-col my-3 h-screensize">
             <div className="mx-2 space-y-4">
-                <p className="text-white font-light text-xs align-top text-opacity-10 ml-5 visible max-lg:invisible">&lt;html mode="Dark"&gt;</p>
-                <p className="text-white font-light text-xs align-top text-opacity-10 ml-14 visible max-lg:invisible">&lt;body class="Welcome Page"&gt;</p>
+                <p className="text-white/10 font-light text-xs align-top ml-5 visible max-lg:invisible">&lt;html mode="Dark"&gt;</p>
+                <p className="text-white/10 font-light text-xs align-top ml-14 visible max-lg:invisible">&lt;body class="Welcome Page"&gt;</p>
 
                 {/* Navbar */}
-                <p className='text-white font-light text-xs align-top text-opacity-10 ml-28 visible max-lg:invisible'>&lt;navbar&gt;</p>
+                <p className='text-white/10 font-light text-xs align-top ml-28 visible max-lg:invisible'>&lt;navbar&gt;</p>
                 <div className='flex justify-center'>
                     <div className="flex w-navbarWidth items-center justify-between max-lg:w-navbarWidthTablet max-mobile:w-navbarWidthMobile">
                         <Link to="/">
@@ -28,10 +28,10 @@ const Home = () => {
                         <NavBar />
                     </div>
                 </div>
-                <p className='text-white font-light text-xs align-top text-opacity-10 ml-28 visible max-lg:invisible'>&lt;navbar&gt;</p>
+                <p className='text-white/10 font-light text-xs align-top ml-28 visible max-lg:invisible'>&lt;navbar&gt;</p>
                 {/* Navbar */}
                 {/* Animation */}
-                <p className='text-white font-light text-xs align-top text-opacity-10 ml-56 visible max-lg:invisible'>&lt;h1&gt;</p>
+                <p className='text-white/10 font-light text-xs align-top ml-56 visible max-lg:invisible'>&lt;h1&gt;</p>
                 <div className="flex flex-col items-center mt-20">
                     <div className="font-bold text-4xl my-0 text-white w-title max-lg:w-titleTablet max-lg:text-2xl max-mobile:w-titleMobile max-mobile:h-20">
                         <TypeAnimation
@@ -49,8 +49,8 @@ const Home = () => {
                         />
                     </div>
                 </div>
-                <p className='text-white font-light text-xs align-top text-opacity-10 ml-56 visible max-lg:invisible'>&lt;/h1&gt;</p>
-                <p className='text-white font-light text-xs align-top text-opacity-10 ml-72 visible max-lg:invisible'>&lt;p&gt;</p>
+                <p className='text-white/10 font-light text-xs align-top ml-56 visible max-lg:invisible'>&lt;/h1&gt;</p>
+                <p className='text-white/10 font-light text-xs align-top ml-72 visible max-lg:invisible'>&lt;p&gt;</p>
 
                 <div className='flex flex-col items-center mt-20'>
                     <div className="w-title text-left text-2xl font-semibold max-lg:w-titleTablet max-lg:text-xl max-mobile:w-titleMobile">
@@ -70,8 +70,8 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <p className='text-white font-light text-xs align-top text-opacity-10 ml-72 visible max-lg:invisible'>&lt;p&gt;</p>
-                <p className="text-white font-light text-xs align-top text-opacity-10 ml-72 visible max-lg:invisible">&lt;button&gt;</p>
+                <p className='text-white/10 font-light text-xs align-top ml-72 visible max-lg:invisible'>&lt;p&gt;</p>
+                <p className="text-white/10 font-light text-xs align-top ml-72 visible max-lg:invisible">&lt;button&gt;</p>
                 <div className='flex flex-col items-center mt-20'>
                     <br></br>
                     <div className="w-title max-lg:w-titleTablet max-mobile:w-titleMobile">
@@ -83,9 +83,9 @@ const Home = () => {
                     </div>
                     <br></br>
                 </div>
-                <p className="text-white font-light text-xs align-top text-opacity-10 ml-72 visible max-lg:invisible">&lt;/button&gt;</p>
-                <p className="text-white font-light text-xs align-top text-opacity-10 ml-14 visible max-lg:invisible">&lt;body class="Welcome Page"&gt;</p>
-                <p className="text-white font-light text-xs align-top text-opacity-10 ml-5 visible max-lg:invisible">&lt;html mode="Dark"&gt;</p>
+                <p className="text-white/10 font-light text-xs align-top ml-72 visible max-lg:invisible">&lt;/button&gt;</p>
+                <p className="text-white/10 font-light text-xs align-top ml-14 visible max-lg:invisible">&lt;body class="Welcome Page"&gt;</p>
+                <p className="text-white/10 font-light text-xs align-top ml-5 visible max-lg:invisible">&lt;html mode="Dark"&gt;</p>
             </div>
             <div className="fixed pointer-events-none z-0 select-none -rotate-90 mx-auto right-[-12rem] bottom-[7rem] text-white text-10xl font-black opacity-7">
                 Patel

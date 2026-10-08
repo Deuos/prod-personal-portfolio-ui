@@ -5,11 +5,11 @@ const AboutMe = () => {
     return (
         <div className="flex flex-col my-3 h-screensize">
             <div className="mx-2 space-y-4">
-                <p className="text-white font-light text-xs align-top text-opacity-20 ml-5">&nbsp;</p>
-                <p className="text-white font-light text-xs align-top text-opacity-20 ml-14">&nbsp;</p>
+                <p className="text-white/20 font-light text-xs align-top ml-5">&nbsp;</p>
+                <p className="text-white/20 font-light text-xs align-top ml-14">&nbsp;</p>
 
                 {/* Navbar */}
-                <p className='text-white font-light text-xs align-top text-opacity-20 ml-28'>&nbsp;</p>
+                <p className='text-white/20 font-light text-xs align-top ml-28'>&nbsp;</p>
                 <div className='flex justify-center'>
                     <div className="flex w-navbarWidth items-center justify-between max-lg:w-navbarWidthTablet max-mobile:w-navbarWidthMobile">
                         <Link to="/">

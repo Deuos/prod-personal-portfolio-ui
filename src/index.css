@@ -1,32 +1,101 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  /* The old config replaced Tailwind's default animations; keep that behaviour */
+  --animate-*: initial;
+  --animate-swing: swing 1s ease 1;
+  --animate-text: text 5s ease infinite;
+
+  --breakpoint-mobile: 624px;
+
+  --color-background-black: #01060B;
+  --color-text-whitecream: #F3F7F0;
+  --color-card-background: #0B161B;
+  --color-Light: #F3F7F0;
+  --color-Light-accent: #48484B;
+  --color-Main: #799BA4;
+  --color-Dark: #181818;
+  --color-Dark-accent: #01060B;
+  --color-ButtonWhite: #F3F7F0;
+  --color-ButtonBorder: #799BA4;
+  --color-ButtonHover: #0a0a23;
+
+  --radius-customButton: 1rem;
+  --radius-projectCardRadius: 0.938rem;
+  --radius-projectCardRadiusInside: 1.25rem;
+
+  --text-4\.5xl: 2.5rem;
+  --text-10xl: 13.75rem;
+
+  --font-raleway: 'Raleway', sans-serif;
+
+  /* Named sizes, used by w-* and h-* */
+  --spacing-title: 56.25rem;
+  --spacing-titleTablet: 37.5rem;
+  --spacing-titleMobile: 21.875rem;
+  --spacing-navbarWidth: 75rem;
+  --spacing-navbarWidthTablet: 43.75rem;
+  --spacing-navbarWidthMobile: 25.875rem;
+  --spacing-contactButton: 40.625rem;
+  --spacing-contactButtonWidth: 10.938rem;
+  --spacing-projectCardWidth: 24rem;
+  --spacing-projectCardWidthInside: 22.438rem;
+  --spacing-screensize: 99vh;
+  --spacing-screensize2: 94vh;
+  --spacing-contactButtonHeight: 3rem;
+  --spacing-backgroundTitle: 14.5rem;
+  --spacing-projectCardHeight: 25.563rem;
+  --spacing-projectCardHeightInside: 24rem;
+
+  @keyframes swing {
+    15% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    50% { transform: translateX(3px); }
+    80% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+  }
+
+  @keyframes text {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
 }
 
-body {
-  color: white;
-  background-color: #01060B;
+/* Numeric overrides from the old config, scoped to the one property each */
+@utility w-85 { width: 5.313rem; }
+@utility w-95 { width: 5.938rem; }
+@utility w-110 { width: 6.875rem; }
+@utility h-70 { height: 4.375rem; }
+@utility h-60 { height: 3.75rem; }
+@utility h-40 { height: 2.5rem; }
+
+/* Tailwind v3 used gray-200 as the default border color */
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  /* Must be layered, otherwise it beats every margin utility */
+  * {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    color: white;
+    background-color: #01060B;
+  }
 }
-
-/* body {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
