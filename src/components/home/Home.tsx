@@ -2,7 +2,6 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import NavBar from '../sidebar/Sidebar';
 import { Link } from 'react-router-dom';
-import Resume from '../../Resume/Resume.pdf';
 
 //max-lg - 1024px tablet
 
@@ -58,8 +57,6 @@ const Home = () => {
                         <br></br>
                         <p>View my&nbsp;
                             <Link className="relative before:absolute before:bg-gray-400 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.25] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500" to="/Projects"><span className="relative">Projects</span></Link>
-                            ,&nbsp;
-                            <a className="relative before:absolute before:bg-gray-400 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.25] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500" href={Resume} download="Resume"><span className="relative">Resume</span></a>
                             ,&nbsp;
                             <Link className="relative before:absolute before:bg-gray-400 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.25] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500" to="/ContactMe"><span className="relative">Contact Me</span></Link>
                             ,&nbsp;or send me an email at

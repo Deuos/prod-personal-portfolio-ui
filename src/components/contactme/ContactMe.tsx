@@ -3,8 +3,6 @@ import NavBar from '../sidebar/Sidebar';
 import { Link } from 'react-router-dom';
 import { BsGithub } from 'react-icons/bs'
 import { IoLogoLinkedin } from 'react-icons/io'
-import { HiDocumentText } from 'react-icons/hi'
-import Resume from '../../Resume/Resume.pdf';
 
 const ContactMe = () => {
     return (
@@ -52,14 +50,6 @@ const ContactMe = () => {
                                     <div ><IoLogoLinkedin size={40} /></div>
                                 </Link>
 
-                            </button>
-                            <button className="flex bg-transparent text-black mr-10 w-contactButtonWidth h-contactButtonHeight items-center justify-center py-2 px-4 bg-white rounded-customButton hover:border hover:bg-gray-400 max-mobile:mt-10">
-                                <div className=' font-black text-xl'>
-                                    <a href={Resume} download="Resume">
-                                        Resume
-                                    </a>
-                                </div>
-                                <div ><HiDocumentText size={30} /></div>
                             </button>
                         </div>
                     </div>
